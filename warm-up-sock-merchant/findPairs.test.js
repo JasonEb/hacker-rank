@@ -18,3 +18,6 @@ test('solves main sample test', () => {
 
     expect(solution(sampleInput)).toBe(3);
 });
+
+//add second test sample
+//Todo: add reading text files 

@@ -4,7 +4,8 @@
   "description": "hacker rank challenges ",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "debug": "node --inspect-brk node_modules/.bin/jest --runInBand"
   },
   "author": "",
   "license": "ISC",
