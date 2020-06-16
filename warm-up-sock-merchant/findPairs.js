@@ -6,8 +6,8 @@ function findPairs(arr) {
     //create a key-value object
     //iterate through arr, and count each id 
     // go through object entries and divide by 2
-    socksMap = {}
-    result = 0
+    let socksMap = {}
+    let result = 0
 
     //collect sock counts
     arr.forEach((sockId) => {
