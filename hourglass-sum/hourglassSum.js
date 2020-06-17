@@ -1,12 +1,14 @@
 const hourglassSum = (arr) => {
     //iterate through i to j, up to 4
     //keep track of max sum
-    let maxSum = 0
+    let maxSum = Number.NEGATIVE_INFINITY
 
     for (let i = 0; i < 4; i++){
         for (let j = 0; j < 4; j++){
             let sum = hourglassSubset(arr, i, j).reduce( (acc, cur) => acc + cur)
-            if (sum > maxSum) { maxSum = sum }
+            if (sum > maxSum) { 
+                maxSum = sum;
+             }
         }
     }
 
