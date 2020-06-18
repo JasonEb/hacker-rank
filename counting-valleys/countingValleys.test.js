@@ -5,3 +5,9 @@ test('it solves example case', () => {
 
     expect(countValleys(path)).toBe(1)
 })
+
+test('it solves 2nd example case', () => {
+    let path = "DDUUDDUDUUUD"
+
+    expect(countValleys(path)).toBe(2)
+})
