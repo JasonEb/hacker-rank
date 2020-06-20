@@ -7,23 +7,32 @@ const countSwaps = (queue) => {
     for(let i = 0; i < queue.length ; i++){
         let initialPos = queue[i] - 1
         if ((initialPos - i) > 2) {
-            debugger
             return "Too chaotic"
         }
-    }
 
-    for(i = 0; i < queue.length - 1; i++) {
-        for(let j = i + 1; j < queue.length; j++) {
-            if (queue[i] > queue[j]) {
-                swap(queue, i, j)
-                swaps += 1
+        for (let j = Math.max(0, queue[i] - 2); j < i; j++){
+            if (queue[j] > queue[i]) { 
+                swaps++ 
             }
         }
     }
+
+
+
+    // for(i = 0; i < queue.length - 1; i++) {
+    //     for(let j = i + 1; j < queue.length; j++) {
+    //         if (queue[i] > queue[j]) {
+    //             swap(queue, i, j)
+    //             swaps += 1
+    //         }
+    //     }
+    // }
     
     console.log("queue sorted: ", queue)
     return swaps;
 }
+
+
 
 const swap = (queue, i, j) => {
     let b = queue[j]
