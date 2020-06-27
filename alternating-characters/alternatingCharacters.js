@@ -1,6 +1,6 @@
 const alternatingCharacters = (str) => {
     let count = 0
-    //iteratively go through str, examine if the next character needs to be 'deleted' 
+
 
     while( str.length > 1) {
         let i = 1
