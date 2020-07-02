@@ -1,0 +1,5 @@
+# Luck Balance
+
+*If Lena loses no more than k important contests, what is the maximum amount of luck she can have after competing in all the preliminary contests? This value may be negative.*
+
+This problem took some time to digest. It's a little counter intuitive to buy into the narrative of "losing" a contest in order to maximize luck. But after I got my brain wrapped around it, I had to map out the logical motions and play with the values. Given that it was a Greedy Algorithm challenge, I immediately considered sorting the input by contest value, the first property. The solution became clear to iterate through the contests and examine the conditions between the second contest value and the k value. Given that it is sorted, we can avoid examining the whole contests lists twice because of the important and luck values. 
